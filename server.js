@@ -18,7 +18,7 @@ const items = [];
 
 app.get('/items', (req, res) => {
   res.send(items.map(item => {
-    return { id: item.id, name: item.name, price: item.price };
+    return { id: item.id, make: item.make, model: item.model, cost: item.cost };
   }));
 });
 

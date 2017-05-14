@@ -10,12 +10,15 @@ class ItemDisplay extends Component {
 
   render() {
     return (
-      <div>
+      <div className="itemDisplay">
+        <Link to="/">Home</Link>
         <ul>
           {this.props.items.map((item, i) => {
             return (
               <li key={i}>
-                <Link to={`/items/${item.id}`}>{item.name}</Link>
+                <Link to={`/items/${item.id}`}>
+                  {item.make} - {item.model}
+                </Link>
               </li>
               );
             })}
