@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
 class NewItem extends Component {
   constructor(props) {
     super(props);
-      this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(formObject) {
